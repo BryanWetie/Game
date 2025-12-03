@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ending_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD1DC"
+    android:layout_centerHorizontal="true"
+    tools:context=".EndingActivity">
+
+
+    <TextView
+        android:id="@+id/ending_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:text="Game Over!"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:id="@+id/result_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ending_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:text="You're an Emoji Master!"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+
+
+    <TextView
+        android:id="@+id/final_score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="casual"
+        android:text="Your Score:"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/final_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/final_score_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="casual"
+        android:text="8/10"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/best_score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/final_score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:text="Best Score:"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/best_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/best_score_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="casual"
+        android:text="10/10"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/play_again_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/best_score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="PLAY AGAIN"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:backgroundTint="@color/black" />
+
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_again_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="HOME"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:backgroundTint="@color/black" />
+
+
+
+
+    <EditText
+        android:id="@+id/phone_num_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Please Enter the Number of Someone You Want To Send Your Score To"
+        android:textSize="15sp"
+        android:fontFamily="casual"
+        android:layout_marginStart="40dp"
+        />
+
+
+    <Button
+        android:id="@+id/message_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_num_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Send Message"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:backgroundTint="@color/black" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD1DC"
+    android:layout_centerHorizontal="true"
+    tools:context=".GuessingActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/guess_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+
+        android:fontFamily="casual"
+        android:text="Guess the Phrase!"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+
+    <ImageView
+        android:id="@+id/emoji_phrase"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/determinateBar"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/guess_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/emoji_phrase"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+
+
+        android:fontFamily="casual"
+        android:text="What phrase does this emoji combination represent?"
+        android:textSize="20sp"
+        />
+
+
+    <EditText
+        android:id="@+id/guess_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/guess_prompt"
+        android:gravity="center"
+
+
+        android:fontFamily="casual"
+        android:hint="Enter your guess"
+        android:inputType="text"
+        android:textSize="20sp"
+        />
+
+
+    <Button
+        android:id="@+id/enterBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guess_input"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+
+
+        android:text="ENTER"
+        android:textSize = "30dp"
+        android:fontFamily="casual"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guess_input"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="30dp"
+
+
+        android:text="MENU"
+        android:textSize = "30dp"
+        android:fontFamily="casual"
+        android:backgroundTint="@color/black"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/determinateBar"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@id/best"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:progress="50"
+        android:progressTint="@color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/best"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/guess_title"
+        android:layout_marginStart="30dp"
+        android:textSize ="18sp"
+        android:text = "Best Score: "
+        android:fontFamily="casual"
+        />
+
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/guess_title"
+        android:textSize ="18sp"
+        android:text = "Current Score: "
+        android:fontFamily="casual"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/material_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Skips on or off   "
+        android:layout_below = "@id/enterBT"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+
+        android:fontFamily="casual"
+        android:textSize ="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterBT"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:text="SKIP"
+        android:textSize = "20dp"
+        android:fontFamily="casual"
+        android:backgroundTint="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="720dp"
+        android:gravity="center"
+        android:minHeight="90dp"
+        android:orientation="horizontal" />
+</RelativeLayout>
